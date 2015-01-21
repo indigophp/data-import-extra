@@ -16,6 +16,7 @@
     },
     "require-dev": {
         "pagerfanta/pagerfanta": "~1.0",
+        "league/csv": "~6.3",
         "phpunit/phpunit": "~4.4"
     },
     "suggest": {
