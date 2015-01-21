@@ -1,0 +1,36 @@
+{
+    "name": "indigophp/data-import-extra",
+    "description": "Extensions for ddeboer/data-import",
+    "license": "MIT",
+    "keywords": ["import", "export"],
+    "homepage": "https://indigophp.com",
+    "authors": [
+        {
+            "name": "Márk Sági-Kazár",
+            "email": "mark.sagikazar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "ddeboer/data-import": "~0.16"
+    },
+    "require-dev": {
+        "pagerfanta/pagerfanta": "~1.0",
+        "phpunit/phpunit": "~4.4"
+    },
+    "suggest": {
+        "pagerfanta/pagerfanta": "Used in Paginated Reader"
+    },
+    "autoload": {
+        "psr-4": {
+            "Indigo\\DataImport\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
