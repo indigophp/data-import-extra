@@ -37,6 +37,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
+- [Grégoire Paris](https://github.com/greg0ire)
 - [Márk Sági-Kazár](https://github.com/sagikazarmark)
 - [All Contributors](https://github.com/indigophp/data-import-extra/contributors)
 

@@ -17,10 +17,13 @@
     "require-dev": {
         "pagerfanta/pagerfanta": "~1.0",
         "league/csv": "~6.3",
+        "halilim/xml-iterator": "~1.0",
         "phpunit/phpunit": "~4.4"
     },
     "suggest": {
-        "pagerfanta/pagerfanta": "Used in Paginated Reader"
+        "pagerfanta/pagerfanta": "Used in Paginated Reader",
+        "league/csv": "Used for CSV Reader and Writer",
+        "halilim/xml-iterator": "Used for XML Reader"
     },
     "autoload": {
         "psr-4": {
