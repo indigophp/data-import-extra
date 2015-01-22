@@ -14,7 +14,7 @@ namespace Indigo\DataImport\Writer;
 use Ddeboer\DataImport\Writer\WriterInterface;
 
 /**
- * @author Márk Sági-Kazár <webmaster@firstcomputer.hu>
+ * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
 abstract class ConverterWriter implements WriterInterface
 {

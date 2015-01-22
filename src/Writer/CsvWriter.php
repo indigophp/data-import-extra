@@ -15,7 +15,7 @@ use Ddeboer\DataImport\Writer\WriterInterface;
 use League\Csv\Writer;
 
 /**
- * @author Márk Sági-Kazár <webmaster@firstcomputer.hu>
+ * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
 class CsvWriter implements WriterInterface
 {

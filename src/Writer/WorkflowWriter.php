@@ -16,7 +16,7 @@ use Ddeboer\DataImport\ValueConverter\ValueConverterInterface;
 use Ddeboer\DataImport\Exception\UnexpectedTypeException;
 
 /**
- * @author Márk Sági-Kazár <webmaster@firstcomputer.hu>
+ * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
 class WorkflowWriter extends ConverterWriter
 {

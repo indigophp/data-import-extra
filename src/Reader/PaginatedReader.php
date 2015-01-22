@@ -15,7 +15,7 @@ use Ddeboer\DataImport\Reader\ReaderInterface;
 use Pagerfanta\Pagerfanta;
 
 /**
- * @author Márk Sági-Kazár <webmaster@firstcomputer.hu>
+ * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
 class PaginatedReader implements ReaderInterface
 {
