@@ -85,6 +85,6 @@ class XmlReader implements ReaderInerface
      */
     public function count()
     {
-        return iterator_count($this->xmlIterator)
+        return 0;
     }
 }
