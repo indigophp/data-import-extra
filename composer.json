@@ -17,11 +17,13 @@
     "require-dev": {
         "pagerfanta/pagerfanta": "~1.0",
         "league/csv": "~6.3",
+        "league/climate": "~3.1",
         "phpunit/phpunit": "~4.4"
     },
     "suggest": {
         "pagerfanta/pagerfanta": "Used in Paginated Reader",
-        "league/csv": "Used for CSV Reader and Writer"
+        "league/csv": "Used for CSV Reader and Writer",
+        "league/climate": "Used for ConsoleWorkflow"
     },
     "autoload": {
         "psr-4": {
