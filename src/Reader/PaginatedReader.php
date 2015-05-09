@@ -15,6 +15,10 @@ use Ddeboer\DataImport\Reader\ReaderInterface;
 use Pagerfanta\Pagerfanta;
 
 /**
+ * Read a dataset paginated from it's original source if iteration is not possible
+ *
+ * Example use case: large amount of data from database
+ *
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
 class PaginatedReader implements ReaderInterface

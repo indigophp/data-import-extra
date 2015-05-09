@@ -12,18 +12,16 @@
     ],
     "require": {
         "php": ">=5.4",
-        "ddeboer/data-import": "~0.16"
+        "ddeboer/data-import": "dev-master"
     },
     "require-dev": {
         "pagerfanta/pagerfanta": "~1.0",
         "league/csv": "~6.3",
-        "halilim/xml-iterator": "~1.0",
         "phpunit/phpunit": "~4.4"
     },
     "suggest": {
         "pagerfanta/pagerfanta": "Used in Paginated Reader",
-        "league/csv": "Used for CSV Reader and Writer",
-        "halilim/xml-iterator": "Used for XML Reader"
+        "league/csv": "Used for CSV Reader and Writer"
     },
     "autoload": {
         "psr-4": {

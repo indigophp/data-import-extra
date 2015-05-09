@@ -12,24 +12,25 @@
 namespace Indigo\DataImport\Reader;
 
 use Ddeboer\DataImport\Reader\ReaderInterface;
-use XmlIterator\XmlIterator;
 
 /**
+ * Use an iterator as a reader
+ *
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-class XmlReader implements ReaderInerface
+class IteratorReader implements ReaderInterface
 {
     /**
-     * @var XmlIterator
+     * @var \Iterator
      */
-    protected $xmlIterator;
+    protected $iterator;
 
     /**
-     * @param XmlIterator $xmlIterator
+     * @param \Iterator $iterator
      */
-    public function __construct(XmlIterator $xmlIterator)
+    public function __construct(\Iterator $iterator)
     {
-        $this->xmlIterator = $xmlIterator;
+        $this->iterator = $iterator;
     }
 
     /**
@@ -45,7 +46,7 @@ class XmlReader implements ReaderInerface
      */
     public function current()
     {
-        return $this->xmlIterator->current();
+        return $this->iterator->current();
     }
 
     /**
@@ -53,7 +54,7 @@ class XmlReader implements ReaderInerface
      */
     public function next()
     {
-        return $this->xmlIterator->next();
+        return $this->iterator->next();
     }
 
     /**
@@ -61,7 +62,7 @@ class XmlReader implements ReaderInerface
      */
     public function key()
     {
-        return $this->xmlIterator->key();
+        return $this->iterator->key();
     }
 
     /**
@@ -69,7 +70,7 @@ class XmlReader implements ReaderInerface
      */
     public function valid()
     {
-        return $this->xmlIterator->valid();
+        return $this->iterator->valid();
     }
 
     /**
@@ -77,14 +78,6 @@ class XmlReader implements ReaderInerface
      */
     public function rewind()
     {
-        return $this->xmlIterator->rewind();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function count()
-    {
-        return 0;
+        return $this->iterator->rewind();
     }
 }
