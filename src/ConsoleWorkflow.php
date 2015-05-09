@@ -53,16 +53,16 @@ class ConsoleWorkflow implements WorkflowInterface
             $msg.= ': '.$name;
         }
 
-        $this->climate->info($msg);
+        $this->climate->write($msg."\n");
 
         $result = $this->workflow->process();
 
-        $this->climate->info("Done\n");
+        $this->climate->info('Time elapsed: '.$result->getElapsed()->format('%i minute(s) %s second(s)'));
+        $this->climate->info('Total processed: '.$result->getTotalProcessedCount().' row(s)');
 
-        $this->climate->info('Result:');
-        $this->climate->info('Time elapsed: ', $result->getElapsed()->format('%i minute(s) %s second(s)'));
-        $this->climate->info('Total number of rows: ', $result->getTotalProcessedCount());
-        $this->climate->warning('Errors: ', $result->getErrorCount());
+        if ($errorCount = $result->getErrorCount() > 0) {
+            $this->climate->error('Errors: '.$errorCount);
+        }
 
         return $result;
     }
