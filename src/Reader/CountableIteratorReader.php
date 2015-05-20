@@ -11,7 +11,7 @@
 
 namespace Indigo\DataImport\Reader;
 
-use Ddeboer\DataImport\Reader\CountableReaderInterface;
+use Ddeboer\DataImport\Reader\CountableReader;
 
 /**
  * Use a class implementing both \Iterator and \Countable as a reader
@@ -24,7 +24,7 @@ use Ddeboer\DataImport\Reader\CountableReaderInterface;
  *
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-class CountableIteratorReader extends IteratorReader implements CountableReaderInterface
+class CountableIteratorReader extends IteratorReader implements CountableReader
 {
     /**
      * {@inheritdoc}

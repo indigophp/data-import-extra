@@ -11,7 +11,7 @@
 
 namespace Indigo\DataImport\Reader;
 
-use Ddeboer\DataImport\Reader\ReaderInterface;
+use Ddeboer\DataImport\Reader;
 use Pagerfanta\Pagerfanta;
 
 /**
@@ -21,7 +21,7 @@ use Pagerfanta\Pagerfanta;
  *
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-class PaginatedReader implements ReaderInterface
+class PaginatedReader implements Reader
 {
     /**
      * @var Pagerfanta

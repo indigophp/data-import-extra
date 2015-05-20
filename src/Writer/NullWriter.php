@@ -11,12 +11,12 @@
 
 namespace Indigo\DataImport\Writer;
 
-use Ddeboer\DataImport\Writer\WriterInterface;
+use Ddeboer\DataImport\Writer;
 
 /**
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-class NullWriter implements WriterInterface
+class NullWriter implements Writer
 {
     /**
      * {@inheritdoc}

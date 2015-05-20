@@ -11,8 +11,8 @@
 
 namespace Indigo\DataImport;
 
-use Ddeboer\DataImport\WorkflowInterface;
 use Ddeboer\DataImport\Workflow;
+use Ddeboer\DataImport\Workflow\StepAggregator;
 use League\CLImate\CLImate;
 
 /**
@@ -20,10 +20,10 @@ use League\CLImate\CLImate;
  *
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-class ConsoleWorkflow implements WorkflowInterface
+class ConsoleWorkflow implements Workflow
 {
     /**
-     * @var WorkflowInterface
+     * @var Workflow
      */
     protected $workflow;
 
@@ -33,10 +33,10 @@ class ConsoleWorkflow implements WorkflowInterface
     protected $climate;
 
     /**
-     * @param WorkflowInterface $workflow
-     * @param CLImate           $climate
+     * @param Workflow $workflow
+     * @param CLImate  $climate
      */
-    public function __construct(WorkflowInterface $workflow, CLImate $climate = null)
+    public function __construct(Workflow $workflow, CLImate $climate = null)
     {
         $this->workflow = $workflow;
         $this->climate = $climate ?: new CLImate;

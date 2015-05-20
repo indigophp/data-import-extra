@@ -11,7 +11,7 @@
 
 namespace Indigo\DataImport\Writer;
 
-use Ddeboer\DataImport\Writer\WriterInterface;
+use Ddeboer\DataImport\Writer as WriterInterface;
 use League\Csv\Writer;
 
 /**

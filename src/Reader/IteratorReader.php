@@ -11,73 +11,20 @@
 
 namespace Indigo\DataImport\Reader;
 
-use Ddeboer\DataImport\Reader\ReaderInterface;
+use Ddeboer\DataImport\Reader;
 
 /**
  * Use an iterator as a reader
  *
  * @author Márk Sági-Kazár <mark.sagikazar@gmail.com>
  */
-class IteratorReader implements ReaderInterface
+class IteratorReader extends \IteratorIterator implements Reader
 {
-    /**
-     * @var \Iterator
-     */
-    protected $iterator;
-
-    /**
-     * @param \Iterator $iterator
-     */
-    public function __construct(\Iterator $iterator)
-    {
-        $this->iterator = $iterator;
-    }
-
     /**
      * {@inheritdoc}
      */
     public function getFields()
     {
         return array_keys($this->current());
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function current()
-    {
-        return $this->iterator->current();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function next()
-    {
-        return $this->iterator->next();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function key()
-    {
-        return $this->iterator->key();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function valid()
-    {
-        return $this->iterator->valid();
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function rewind()
-    {
-        return $this->iterator->rewind();
     }
 }

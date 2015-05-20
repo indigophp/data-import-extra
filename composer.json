@@ -10,9 +10,15 @@
             "email": "mark.sagikazar@gmail.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/sagikazarmark/data-import.git"
+        }
+    ],
     "require": {
         "php": ">=5.4",
-        "ddeboer/data-import": "dev-master"
+        "ddeboer/data-import": "dev-interfaces"
     },
     "require-dev": {
         "pagerfanta/pagerfanta": "~1.0",
